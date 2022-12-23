@@ -1,0 +1,37 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.trans-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#logo {
+    margin-left: 1em;
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+#perfil{
+    margin-right: 1em;
+    height: 90px;
+    width: auto;
+}
