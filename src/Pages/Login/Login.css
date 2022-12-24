@@ -1,0 +1,62 @@
+
+.login {
+    position: relative;
+    height: 100vh;
+    background-image: url(../../images/login.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-login{
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-login{
+    height: 30px;
+    margin-right: 1em;
+    font-size: small;
+    padding: 0px 12px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+}
+
+.div-interno{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 30vh;
+    height: 30vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.div-input {
+    margin: 2em;
+    align-items: baseline;
+}
+
+.input-login {
+    border: none;
+    height: 30px;
+    font-size: small;
+    padding: 12px;
+    font-weight: 600;
+    color: black;
+    outline: none; 
+}
+

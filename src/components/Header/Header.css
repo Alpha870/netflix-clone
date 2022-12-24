@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
     background-color: #111;
     position: sticky;
     top: 0;
@@ -32,6 +32,6 @@
 
 #perfil{
     margin-right: 1em;
-    height: 90px;
+    height: 20px;
     width: auto;
 }

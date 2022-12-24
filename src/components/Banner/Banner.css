@@ -1,0 +1,70 @@
+
+
+
+.div-banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.banner {
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.content {
+    margin-left: 40px;
+    position: absolute;
+    color: white;
+    height: 70%;
+}
+
+
+.play{
+    margin: 0px 15px 0px 0px;
+    display: inline-flex;
+    align-items: center;
+    font-size: small;
+    padding: 2px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+.play:hover {
+    background-color: rgb(167, 165, 165);
+}
+
+i {
+    padding: 0px 5px 0px 0px;
+    font-size: 20px;
+}
+
+.info{
+    margin: 0px 15px 0px 0px;
+    display: inline-flex;
+    align-items: center;
+    font-size: small;
+    padding: 2px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: grey;
+}
+
+.info:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.darken {
+    position: absolute;
+    top: 30vh;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.6), #111);
+}
