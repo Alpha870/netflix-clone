@@ -7,7 +7,7 @@ import Paypal from "./Pages/Paypal/Paypal";
 import Profile from "./Pages/Profile/Profile";
 
 function App() {
-  const user = null;
+  const user = 'hola';
   return (
     <div className="root">
       <Router>

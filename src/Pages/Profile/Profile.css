@@ -1,0 +1,37 @@
+
+.section-profile {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    color: white;  
+}
+
+.article-profile {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding: 2em, 0em;
+}
+
+.div-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    border: 2px solid red;
+    padding: 2em 0em;
+}
+
+.div-interno{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2em;
+}
+
+.salir-profile {
+    width: 70%;
+}
