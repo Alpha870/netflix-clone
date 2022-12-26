@@ -1,28 +1,28 @@
-import './Profile.css'
-import Header from '../../components/Header/Header'
+import "./Profile.css";
+import Header from "../../components/Header/Header";
+import Plans from "../../components/Plans/Plans";
 
 const Profile = () => {
-  return (
-    <section className='section-profile' >
-      <Header />
-        <article className='article-profile'>
-          <div className='div-profile'>
-            <h3>Editar Perfil</h3>
-            <h5>Plans</h5>
-              <div className='div-interno'>
-                <p>Netflix Standard</p>
-                <button>Suscribirse</button>
-                <p>Netflix Basic</p>
-                <button>Suscribirse</button>
-                <p>Netflix Premium</p>
-                <button>Suscribirse</button>
-              </div>
-              <button className='salir-profile'>Salir</button>
-          </div>
-        </article>
-    </section>
- 
-    )
-}
 
-export default Profile
+  return (
+    <section className="section-profile" >
+      <Header />
+      <article className="article-profile">
+        <div className="div-profile">
+          <h3>Editar Perfil</h3>
+          <h5 className="h5-profile">Plans</h5>
+          <div className="div-interno">
+            <Plans cost={7.99}>Netflix standard</Plans>
+            <Plans cost={11.99}>Netflix Basic</Plans>
+            <Plans cost={15.99}>Netflix Premium</Plans>
+          </div>
+            <button className="salir-profile" type="button">
+              CERRAR SESIÓN
+            </button>
+        </div>
+      </article>
+    </section>
+  );
+};
+
+export default Profile;

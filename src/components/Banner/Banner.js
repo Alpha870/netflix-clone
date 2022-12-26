@@ -20,10 +20,10 @@ const Banner = () => {
             {maxDescription('Movie description', 14)}
           </h6>
           <button className="play" type="button">
-            <i className="bi bi-play-fill"></i>Reproducir
+            <i id="icon-banner"className="bi bi-play-fill"></i>Reproducir
           </button>
           <button className="info" type="button">
-            <i className="bi bi-info-circle"></i> Más información{" "}
+            <i id="icon-banner" className="bi bi-info-circle"></i> Más información{" "}
           </button>
         </div>
       <div className="darken"></div>

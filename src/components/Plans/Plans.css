@@ -1,0 +1,23 @@
+.div-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.but-profile{
+    height: 30px;
+    margin-right: 1em;
+    font-size: small;
+    padding: 0px 12px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+}
+
+.p-profile{
+    height: 30px;
+    margin: 0.5em;
+}

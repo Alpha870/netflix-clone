@@ -47,74 +47,24 @@
 
 .div-input {
     margin: 2em;
-    align-items: baseline;
+    align-items: center;
 }
 
-.input-login {
-    border: none;
+.input-empezar {
     height: 30px;
+    border: none;
     font-size: small;
     padding: 12px;
     font-weight: 600;
     color: black;
     outline: none; 
 }
-
-.div-sign{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 30vh;
-    height: auto;
-    width: 100%;
-    color: white;
-}
-
-.register{
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.589);
-}
-
-.h4-sign {
-    margin-bottom: 1.5em;
-}
-
-.input-sign{
-    margin: 0.5em;
+.button-empezar{
+    height: 30px;
     border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 30px;
-    font-size: small;
-    padding: 12px;
-    font-weight: 600;
-    color: black;
-    outline: none; 
-    
-}
-
-.button-sign {
-    height: 30px;
-    width: 100%;
     font-size: small;
     padding: 0px 12px;
-    border: none;
-    border-radius: 5px;
     font-weight: 600;
     color: white;
     background-color: red;
-    margin-top: 2em;
-}
-
-.p-sign{
-    margin-top: 1em;
-    font-size: xx-small;
 }
