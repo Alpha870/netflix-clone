@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./SignUp.css";
-import appFirebase from "../../firebase";
-import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth'
 
-const auth = getAuth(appFirebase)
+
+// import appFirebase from "../../firebase";
+// import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth'
+
+// const auth = getAuth(appFirebase)
 
 
 
@@ -15,23 +17,23 @@ const SignUp = () => {
   
   
   const signIn = async (e) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-    .then((authUser) => console.log(authUser))
-    .catch((err) => alert(err.message))
+  //   e.preventDefault();
+  //   signInWithEmailAndPassword(auth, email, password)
+  //   .then((userAuth) => console.log(setUser, 'desde SIgn'))
+  //   .catch((err) => alert(err.message))
   }
   
   const registrarse = () => {
-    setRegistro('Registrate');
+    setRegistro('Registrarse');
   }
-  const register = async (e) => {
-    registrarse()
-    if(registro) {
-      await createUserWithEmailAndPassword(auth, email, password)
-    }else{
-      await createUserWithEmailAndPassword(auth, email, password)
-    }
-  }
+  // const register = async (e) => {
+  //   registrarse()
+  //   if(registro) {
+  //     await createUserWithEmailAndPassword(auth, email, password)
+  //   }else{
+  //     await createUserWithEmailAndPassword(auth, email, password)
+  //   }
+  // }
 
   return (
     <div className="register">
@@ -43,6 +45,7 @@ const SignUp = () => {
         className="input-sign"
         placeholder=" Email..."
         type="email"
+        required
         ></input>
 
       <input
@@ -51,6 +54,7 @@ const SignUp = () => {
         className="input-sign"
         placeholder=" Contraseña..."
         type="Password"
+        required
       ></input>
 
       <button
@@ -58,10 +62,11 @@ const SignUp = () => {
         type="submit"
         className="button-sign">{registro}
       </button>
+      
       <p className="p-sign">Nuevo en Netflix?
         <span
           className="span-sign"
-          onClick={register}
+          onClick={registrarse}
           > Registrate ahora.
         </span>
       </p>

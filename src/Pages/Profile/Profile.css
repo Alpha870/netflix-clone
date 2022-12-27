@@ -40,12 +40,18 @@
 
 .salir-profile {
     width: 70%;
-    height: 30px;
+    padding: 10px;
+    height: auto;
     margin-right: 1em;
-    font-size: x-small;
-    padding: 0px 12px;
+    font-size: small;
     border: none;
+    text-align: center;
     font-weight: 600;
     color: white;
     background-color: red;
+}
+
+.salir-profile:hover{
+    color: white;
+    background-color: rgb(209, 55, 55);
 }

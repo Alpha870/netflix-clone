@@ -7,21 +7,21 @@ import Login from "./Pages/Login/Login";
 import Paypal from "./Pages/Paypal/Paypal";
 import Profile from "./Pages/Profile/Profile";
 
-import appFirebase from "./firebase";
-import {getAuth, onAuthStateChanged} from 'firebase/auth';
-const auth = getAuth(appFirebase)
+// import appFirebase from "./firebase";
+// import {getAuth, onAuthStateChanged} from 'firebase/auth';
+// const auth = getAuth(appFirebase)
 
 function App() {
 
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState('paco');
 
-  onAuthStateChanged(auth, (userFirebase) => {
-    if (userFirebase){
-      setUser(userFirebase)
-    } else {
-      setUser(null)
-    }
-  })
+  // onAuthStateChanged(auth, (userFirebase) => {
+  //   if (userFirebase){
+  //     setUser(userFirebase)
+  //   } else {
+  //     setUser(null)
+  //   }
+  // })
 
 
   return (

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Profile = () => {
 
+
   return (
     <section className="section-profile" >
       <Header />
@@ -17,11 +18,9 @@ const Profile = () => {
             <Plans cost={11.99}>Netflix Basic</Plans>
             <Plans cost={15.99}>Netflix Premium</Plans>
           </div>
-            <button className="salir-profile" type="button">
-              <Link to={'/login'}>
-              Cerrar sesión
+              <Link to={'/login'} className="salir-profile" type="button">
+                Cerrar sesión
               </Link>
-            </button>
         </div>
       </article>
     </section>

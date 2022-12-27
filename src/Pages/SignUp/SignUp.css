@@ -53,6 +53,10 @@
     margin-top: 2em;
 }
 
+.button-sign:hover {
+    background-color: rgb(209, 55, 55);
+}
+
 .p-sign {
     margin-top: 1em;
     font-size: x-small;

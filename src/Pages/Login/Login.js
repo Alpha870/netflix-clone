@@ -2,6 +2,7 @@ import "./Login.css";
 import logo from "../../images/logo.png";
 import { useRef, useState } from "react";
 import SignUp from "../SignUp/SignUp";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [signIn, setSignIn] = useState(false);
@@ -29,7 +30,7 @@ const Login = () => {
           signIn ? ( 
           <div className="div-sign">
             <article ref={divRef}>
-              <SignUp/>
+              <SignUp />
             </article>
           </div>
 
@@ -41,7 +42,9 @@ const Login = () => {
               <h6>Listo para ver, ingrese el correo electrónico para crear o reiniciar su membresía</h6>
             <div className="div-input">
               <input className="input-empezar" placeholder=" Email..." type="text" ></input>
-              <button className="button-empezar">EMPEZAR</button>
+              <Link to={'/'}>
+                <button className="button-empezar">EMPEZAR</button>
+              </Link>
             </div>
           </div>
             )}
