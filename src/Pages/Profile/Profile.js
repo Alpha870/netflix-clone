@@ -1,6 +1,7 @@
 import "./Profile.css";
 import Header from "../../components/Header/Header";
 import Plans from "../../components/Plans/Plans";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
 
@@ -17,7 +18,9 @@ const Profile = () => {
             <Plans cost={15.99}>Netflix Premium</Plans>
           </div>
             <button className="salir-profile" type="button">
-              CERRAR SESIÓN
+              <Link to={'/login'}>
+              Cerrar sesión
+              </Link>
             </button>
         </div>
       </article>

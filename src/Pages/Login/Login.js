@@ -7,7 +7,7 @@ const Login = () => {
   const [signIn, setSignIn] = useState(false);
   
   
-  //Funcion que oculta e div al hacer clic fuera de este
+  // Funcion que oculta e div al hacer clic fuera de este
   const divRef = useRef(null);
 
   function handleClick(event) {
