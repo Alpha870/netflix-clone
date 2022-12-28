@@ -9,13 +9,13 @@ const Home = () => {
     <div>
         <Header />
         <Banner />
-        <Row title="NETFLIX ORIGINALES" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>
-        <Row title="TOP" fetchUrl={requests.fetchTopRated}/>
-        <Row title="ACCION" fetchUrl={requests.fetchActionMovies}/>
-        <Row title="COMEDIA" fetchUrl={requests.fetchComedyMovies}/>
-        <Row title="TERROR" fetchUrl={requests.fetchHorrorMovies}/>
-        <Row title="ROMANCE" fetchUrl={requests.fetchRomanceMovies}/>
-        <Row title="DOCUMENTALES" fetchUrl={requests.fetchDocumentaries}/>
+        <Row title="Titulos más buscados" fetchUrl={requests.fetchTrending}/>
+        <Row title="Tendencias ahora" fetchUrl={requests.fetchTopRated}/>
+        <Row title="Ciencia ficción acción" fetchUrl={requests.fetchActionMovies}/>
+        <Row title="Comedias" fetchUrl={requests.fetchComedyMovies}/>
+        <Row title="Terror" fetchUrl={requests.fetchHorrorMovies}/>
+        <Row title="Romances" fetchUrl={requests.fetchRomanceMovies}/>
+        <Row title="Documentales" fetchUrl={requests.fetchDocumentaries}/>
     </div>
   )
 }

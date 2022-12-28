@@ -1,4 +1,25 @@
-.h4-row{
-    margin-left: 2em;
-    color: white;
+.h4-row {
+  margin-left: 1em;
+  padding-top: 2em;
+  color: white;
+}
+
+.div-poster {
+  position: relative;
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.poster-row {
+  max-height: 12rem;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.poster-row:hover {
+  transform: scale(1.1);
 }
