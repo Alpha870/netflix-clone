@@ -1,8 +1,8 @@
-import './Home.css'
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import Row from '../../components/Row/Row'
 import requests from '../../Request'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
         <Row title="Terror" fetchUrl={requests.fetchHorrorMovies}/>
         <Row title="Romances" fetchUrl={requests.fetchRomanceMovies}/>
         <Row title="Documentales" fetchUrl={requests.fetchDocumentaries}/>
+        <Footer />
     </div>
   )
 }

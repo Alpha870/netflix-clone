@@ -1,0 +1,33 @@
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 20vh;
+}
+
+.div-icons {
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  gap: 2rem;
+  margin-left: 2rem;
+  left: 0;
+  color: white;
+}
+
+.footer i {
+  font-size: 20px;
+}
+
+.footer p {
+    margin: 1rem 0em 2em 3em;
+    align-self: start;
+    color: white;
+    font-size: x-small;
+}
+
+.footer a:hover{
+    color: rgb(187, 176, 176);
+}
