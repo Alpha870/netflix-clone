@@ -11,8 +11,7 @@ const Profile = () => {
       <Header />
       <article className="article-profile">
         <div className="div-profile">
-          <h3>Editar Perfil</h3>
-          <h5 className="h5-profile">Plans</h5>
+          <h5 className="h5-profile">Elige tu plan</h5>
           <div className="div-interno">
             <Plans cost={7.99}>Netflix standard</Plans>
             <Plans cost={11.99}>Netflix Basic</Plans>

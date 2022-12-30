@@ -3,6 +3,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./Row.css";
 
+const mover = (event) => {
+  event.preventDefault();
+  window.scrollBy(100, 0);
+}
+
 const Row = ({ title, fetchUrl }) => {
   const [movies, setMovies] = useState([]);
 
@@ -17,20 +22,20 @@ const Row = ({ title, fetchUrl }) => {
     fetchData();
   }, [fetchUrl]);
 
+
   return (
     <div className="div-general">
+      
       <h6 className="h4-row">{title}</h6>
-      <div className="div-poster">
-      {/* <button className="botonDerecha" onClick={desplazarDerecha}></button> */}
+      <div onClick={mover} className="div-poster">
         {movies.map((movie) => (
           <img
-          className="poster-row"
-          key={movie.id}
-          src={`${base_url}${movie.poster_path}`}
-          alt={movie.name}
+            className="poster-row"
+            key={movie.id}
+            src={`${base_url}${movie.poster_path}`}
+            alt={movie.name}
           ></img>
-          ))}
-          {/* <button className="botonIzquierda" onClick={desplazarIzquierda}></button> */}
+        ))}
       </div>
     </div>
   );

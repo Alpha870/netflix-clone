@@ -6,6 +6,9 @@ import requests from "../../Request";
 
 const Banner = () => {
   const [movies, setMovies] = useState([]);
+  const [keyword, setkeyword] = useState([]);
+  // const [clave, setClave] = useState([]);
+
 
   const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -19,6 +22,36 @@ const Banner = () => {
     };
     fetchData();
   }, []);
+
+
+  useEffect(() => {
+    const fetchDatakey = async () => {
+      const request = await axios.get(`https://api.themoviedb.org/3/movie/${movies.id}/keywords?api_key=8c4c6a48a2ec0afe0f654051bafaf650`);
+      setkeyword(request);
+      return request;
+    };
+    fetchDatakey();
+  }, [movies]);
+
+  // SEGUIR MAÑANA --------------------------------
+  
+  // useEffect(() => {
+  //   const fetchDataclave = async () => {
+  //     const request = await axios.get(`https://api.themoviedb.org/3/keyword/${keyword.data.keywords[0].id}/movies?api_key=8c4c6a48a2ec0afe0f654051bafaf650`);
+  //     setClave(request);
+  //     return request;
+  //   };
+  //   fetchDataclave();
+  // }, []);
+  
+  
+  console.log(movies.title)
+  if(movies){
+    console.log(keyword, 'soy la key')
+    // console.log(clave, 'soy clave')
+  }
+  
+
 
   
   // función para restringir un maximo de letras

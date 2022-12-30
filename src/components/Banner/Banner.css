@@ -11,7 +11,7 @@
 }
 
 .h6-banner {
-    font-size: small;
+  font-size: small;
 }
 
 .content {
@@ -22,16 +22,15 @@
   padding: 1em;
   position: absolute;
   border-radius: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   height: auto;
   width: 40%;
   margin-bottom: 1rem;
   z-index: 3;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(2px);
-  box-shadow: rgba(255, 255, 255, .15) 0px 8px 24px;
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 8px 24px;
 }
-
 
 /* bottones */
 
@@ -92,4 +91,52 @@
     rgba(37, 37, 37, 0.6),
     #111
   );
+}
+
+/* de 730px hacia abajo */
+@media screen and (max-width: 700px) {
+  .div-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* de 560px hacia abajo */
+@media screen and (max-width: 560px) {
+  .h1-banner {
+    font-size: large;
+  }
+
+  .h6-banner {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .content {
+    bottom: 0;
+    margin: 1rem;
+    width: 90%;
+  }
+
+  .div-buttons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .content h1 {
+    font-size: small;
+  }
+
+  .content h6 {
+    display: none;
+  }
 }
