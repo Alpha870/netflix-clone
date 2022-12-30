@@ -1,6 +1,6 @@
 import "./Plans.css";
 
-const Plans = ({cost, children}) => {
+const Plans = ({children}) => {
 
   return (
     <>

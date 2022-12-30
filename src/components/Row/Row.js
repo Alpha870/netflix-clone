@@ -3,11 +3,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./Row.css";
 
-const mover = (event) => {
-  event.preventDefault();
-  window.scrollBy(100, 0);
-}
-
 const Row = ({ title, fetchUrl }) => {
   const [movies, setMovies] = useState([]);
 
@@ -27,7 +22,7 @@ const Row = ({ title, fetchUrl }) => {
     <div className="div-general">
       
       <h6 className="h4-row">{title}</h6>
-      <div onClick={mover} className="div-poster">
+      <div className="div-poster">
         {movies.map((movie) => (
           <img
             className="poster-row"
