@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 
 const SignUp = () => {
@@ -26,12 +27,12 @@ const SignUp = () => {
         type="Password"
         required
       ></input>
-
+    <Link to={'/'}>
       <button
         type="submit"
         className="button-sign">{registro}
       </button>
-      
+    </Link>
       <p className="p-sign">Nuevo en Netflix?
         <span
           className="span-sign"
