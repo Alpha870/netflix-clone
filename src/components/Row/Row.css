@@ -14,16 +14,6 @@
   z-index: 98;
 }
 
-.div-poster::-webkit-scrollbar {
-  background: transparent;
-  height: 8px;
-}
-
-.div-poster:hover::-webkit-scrollbar {
-  height: 8px;
-  background-color: rgba(255, 255, 255, 0.493);
-}
-
 .poster-row {
   max-height: 12rem;
   object-fit: contain;
